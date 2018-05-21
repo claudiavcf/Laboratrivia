@@ -14,7 +14,8 @@ var iniciarPartida = parseInt(prompt("Ingresa el número que corresponda a tu re
 
 mostrarResultados.style.display = '';
 if (iniciarPartida == 2) {//CASO 1; EN EL QUE EL USUARIO NO QUIERA JUGAR
-  mostrarResultados.innerHTML =  "<h1>Gracias por visitarnos, nos vemos la próxima 😉 </h1>";
+  mostrarResultados.innerHTML =  "<h1>¡Gracias por visitarnos, nos vemos la próxima! </h1> ";
+document.write('<img src="http://reporteroescolar.unir.net/2015/wp-content/uploads/2016/03/adios.jpg"/>');
 }
 else {//Caso en el que SI quiera continuar con el juego
   respuestasCorrectas.innerHTML = "<h4> Preguntas correctas </h4>";
@@ -25,16 +26,18 @@ else {//Caso en el que SI quiera continuar con el juego
   /* PRIMERA PREGUNTA */
   var primeraPregunta = parseInt(prompt("1.¿Cuál es la bebida preferida de Gonzalo? \n 1. Agua \n 2. Cerveza \n 3. Vino"));
   if (primeraPregunta == 2) { //Ejemplo de opción con NÚMERO
-    respuestasCorrectas.innerHTML += "1.¿Cuál es la bebida preferida de Gonzalo? <br> <strong>Respuesta correcta:</strong> 🍺 La cerveza 🍺";
+    respuestasCorrectas.innerHTML += "1.¿Cuál es la bebida preferida de Gonzalo? <br> <strong>Respuesta correcta:</strong> 🍺 La cerveza 🍺 <br>" ;
   } else {
-    respuestasIncorrectas.innerHTML += "1.¿Cuál es la bebida preferida de Gonzalo? <br> <strong>La respuesta correcta era:</strong> 🍺 La cerveza 🍺";
+    respuestasIncorrectas.innerHTML += "1.¿Cuál es la bebida preferida de Gonzalo? <br> <strong>La respuesta correcta era:</strong> 🍺 La cerveza 🍺 <br>" ;
   }
   //SEGUNDA PREGUNTA
   var segundaPregunta = prompt("2.¿Qué es lo que más le gusta hacer a Lulú? \n A. Cantar \n B. Dibujar \n C. Programar");
   if (segundaPregunta == "A") { //Ejemplo de opción con LETRA
     //respuestasCorrectas.innerHTML += "<br> 2.¿Qué es lo que más le gusta hacer a Lulú? <br> <strong>Respuesta correcta:</strong> 🎤 Cantar 🎤";
-    respuestasCorrectas.innerHTML = respuestasCorrectas.innerHTML + "<br> 2.¿Qué es lo que más le gusta hacer a Lulú? <br> <strong>Respuesta correcta:</strong> 🎤 Cantar 🎤";
+    respuestasCorrectas.innerHTML = respuestasCorrectas.innerHTML + "<br> 2.¿Qué es lo que más le gusta hacer a Lulú? <br> <strong>Respuesta correcta:</strong> 🎤 Cantar 🎤 <br>" ;
   } else {
-    respuestasIncorrectas.innerHTML += "<br> 2.¿Qué es lo que más le gusta hacer a Lulú? <br> <strong>Respuesta correcta:</strong> 🎤 Cantar 🎤";
+    respuestasIncorrectas.innerHTML += "<br> 2.¿Qué es lo que más le gusta hacer a Lulú? <br> <strong>Respuesta correcta:</strong> 🎤 Cantar 🎤 <br>";
   }
+
+
 }
